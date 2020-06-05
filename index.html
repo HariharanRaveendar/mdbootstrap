@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Maruthi Printers</title>
+      <!-- Font Awesome -->
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Google Fonts -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body class="fixed-sn black-skin">
+      <header>
+         <!--Navbar-->
+         <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+               <!-- Brand -->
+               <a class="navbar-brand" href="#">
+               <img src="img/mplogo.png" class="img-fluid logo" alt="logo">
+               </a>
+               <!-- Collapse -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Links -->
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Left -->
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#">
+                        <i class="fas fa-home"></i>
+                        Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                     </li>
+                     <!-- Dropdown -->
+                     <!-- Dropdown -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                        <i class="fas fa-clipboard-list"></i>
+                        Products</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                           <a class="dropdown-item" href="visting cards.html">Visting Cards</a>
+                           <a class="dropdown-item" href="#">Wedding Cards</a>
+                           <a class="dropdown-item" href="#">Leatter Heads</a>
+                           <a class="dropdown-item" href="#">Rubber Stamp</a>
+                           <a class="dropdown-item" href="#">Book Bindings</a>
+                           <a class="dropdown-item" href="#">All Digital Printing</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#Aboutus">
+                        <i class="fas fa-users"></i>
+                        Who We Are</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#" data-toggle="modal" data-target="#centralModallg">
+                        <i class="fas fa-upload"></i>
+                        Upload Docs</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#contactus">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        Contact us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#" data-toggle="modal" data-target="#modalLRForm">
+                        <i class="fas fa-user"></i>
+                        LOGIN</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link waves-effect" data-toggle="modal" data-target="#sideModalTR" href="#"">
+                        <i class="fas fa-money-check-alt"></i>
+                        </a>
+                     </li>
+                  </ul>
+                  <!-- Right -->
+                  <form class="form-inline">
+                     <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                     </div>
+                  </form>
+               </div>
+            </div>
+            </div>
+         </nav>
+         <!--/.Navbar-->
+      </header>
+      <!--Modal: Login / Register Form-->
+      <form action="" id="login">
+         <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+               <!--Content-->
+               <div class="modal-content">
+                  <!--Modal cascading tabs-->
+                  <div class="modal-c-tabs">
+                     <!-- Nav tabs -->
+                     <ul class="nav nav-tabs md-tabs orange tabs-2 list-unstyled" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link black-text active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                           Login</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link black-text" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                           Register</a>
+                        </li>
+                     </ul>
+                     <!-- Tab panels -->
+                     <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                           <!--Body-->
+                           <div class="modal-body mb-1">
+                              <div class="md-form form-sm mb-5">
+                                 <i class="fas fa-envelope prefix"></i>
+                                 <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                 <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                              </div>
+                              <div class="md-form form-sm mb-4">
+                                 <i class="fas fa-lock prefix"></i>
+                                 <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                 <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                              </div>
+                              <div class="text-center mt-2">
+                                 <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                              </div>
+                           </div>
+                           <!--Footer-->
+                           <div class="modal-footer">
+                              <div class="options text-center text-md-right mt-1">
+                                 <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                 <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                              </div>
+                              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                        <!--/.Panel 7-->
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+                           <!--Body-->
+                           <div class="modal-body">
+                              <div class="md-form form-sm mb-5">
+                                 <i class="fas fa-envelope prefix"></i>
+                                 <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                              </div>
+                              <div class="md-form form-sm mb-5">
+                                 <i class="fas fa-lock prefix"></i>
+                                 <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                 <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                              </div>
+                              <div class="md-form form-sm mb-4">
+                                 <i class="fas fa-lock prefix"></i>
+                                 <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                 <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                              </div>
+                              <div class="text-center form-sm mt-2">
+                                 <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                              </div>
+                           </div>
+                           <!--Footer-->
+                           <div class="modal-footer">
+                              <div class="options text-right">
+                                 <p class="pt-1">Already have an account? <a data-toggle="tab" href="#panel7" class="blue-text">Log In</a></p>
+                              </div>
+                              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                        <!--/.Panel 8-->
+                     </div>
+                  </div>
+               </div>
+               <!--/.Content-->
+            </div>
+         </div>
+      </form>
+      <!--modal upload-->
+      <form action="" id="upload">
+         <div class="modal fade" id="centralModallg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!-- Change class .modal-lg to change the size of the modal -->
+            <div class="modal-dialog modal-lg" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title w-100 text-center" id="myModalLabel">Upload Documents</h4>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true"></span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" for="inputGroupSelect1">Products</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3">
+                              <select class="browser-default custom-select" id="inputGroupSelect1">
+                                 <option selected>Choose...</option>
+                                 <option value="1">Visiting Cards</option>
+                                 <option value="2">Wedding Cards</option>
+                                 <option value="3">Book Bindings</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" for="inputGroupSelect2">Types</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3">
+                              <select class="browser-default custom-select" id="inputGroupSelect2">
+                                 <option selected>Choose...</option>
+                                 <option value="1">Visiting Cards</option>
+                                 <option value="2">Wedding Cards</option>
+                                 <option value="3">Book Bindings</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" for="inputGroupSelect3">Sub Types</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3">
+                              <select class="browser-default custom-select" id="inputGroupSelect3">
+                                 <option selected>Choose...</option>
+                                 <option value="1">Visiting Cards</option>
+                                 <option value="2">Wedding Cards</option>
+                                 <option value="3">Book Bindings</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" for="inputGroupSelect4">Size</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3">
+                              <select class="browser-default custom-select" id="inputGroupSelect4">
+                                 <option selected>Choose...</option>
+                                 <option value="1">Visiting Cards</option>
+                                 <option value="2">Wedding Cards</option>
+                                 <option value="3">Book Bindings</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" id="inputGroupFileAddon01" for="inputGroupFile01">Upload</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3">
+                              <div class="custom-file">
+                                 <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                              </div>
+                              <p class="text-danger">Please upload jpg, jpeg, gif, png, eps, ai, pdf, zip, tar, rar,
+                                 cdr, psd images only (Artwork should be minimum 300 dpi)
+                              </p>
+                              <p class="text-danger">
+                                 File should not be larger than 50MB in size. If you have more than one file, please zip them into one file and upload that file.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-2">
+                           <label class="input-group-text text-justify" for="textarea1">Shipping <br> Address</label>
+                        </div>
+                        <div class="col-md-9">
+                           <div class="input-group mb-3 md-form input-group">
+                              <textarea class="md-textarea form-control" id="textarea1" aria-label="With textarea"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer text-center">
+                     <button type="button" class="btn btn-primary btn-sm">Upload</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+      <form action="" id="makepayments">
+         <div class="modal fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+            <div class="modal-dialog modal-side modal-top-right" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title w-100" id="myModalLabel">Payments</h4>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     ...
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Side Modal Top Right -->
+      </form>
+      <!--Modal: Login / Register Form-->
+      <main class="mt-5 sec1">
+         <div class="container">
+            <section id="section1">
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-7 mb-4">
+                     <div class="view overlay z-depth-1-half">
+                        <img src="img/slide.jpg" class="card-img-top" alt="">
+                        <div class="mask rgba-white-light"></div>
+                     </div>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-5 mb-4">
+                     <h1 class="tag">We Deal With Ink And Papers</h1>
+                     <hr>
+                     <p>Who we are, we are the best in online Printing works we will do more efficient work.
+                        we doing all kind of printing works. 
+                        The printing Work will be in good quality.
+                     </p>
+                     <a href="#" class="btn btn-indigo">Shop Now</a>
+                  </div>
+                  <!--Grid column-->
+               </div>
+            </section>
+            <hr class="my-5">
+            <h3 class="h3tag text-center">
+               Get Started
+            </h3>
+            <section class="section2">
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-12 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/visting.jpg" class="card-img-top visimg "alt="visting">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">Visting Cards</h4>
+                           <!--Text-->
+                           <p class="card-text">Identity of yours
+                           </p>
+                           <a href="#!" class="btn btn-indigo">View models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/wedding.jpg" class="card-img-top visimg"
+                              alt="">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">Wedding Cards</h4>
+                           <!--Text-->
+                           <p class="card-text">Make it memorable.
+                           </p>
+                           <a href="#" class="btn btn-indigo">View Models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/letterhead.png" class="card-img-top visimg"
+                              alt="">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">Letter Head</h4>
+                           <!--Text-->
+                           <p class="card-text">Make Your Writing As Valuable
+                           </p>
+                           <a href="#" class="btn btn-indigo">View Models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+               </div>
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-12 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/rubberstamp.jpg" class="card-img-top visimg"
+                              alt="">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">Rubber Stamp</h4>
+                           <!--Text-->
+                           <p class="card-text">Self Printing
+                           </p>
+                           <a href="#!" class="btn btn-indigo">View Models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/book-binding-300x300.png" class="card-img-top visimg"
+                              alt="">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">Book Bindings</h4>
+                           <!--Text-->
+                           <p class="card-text">Tie Your Reference
+                           </p>
+                           <a href="#" class="btn btn-indigo">View Models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                     <!--Card-->
+                     <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                           <img src="img/all.jpg" class="card-img-top visimg"
+                              alt="">
+                           <a href="#">
+                              <div class="mask rgba-white-slight"></div>
+                           </a>
+                        </div>
+                        <!--Card content-->
+                        <div class="card-body">
+                           <!--Title-->
+                           <h4 class="card-title">View All Printing Details</h4>
+                           <!--Text-->
+                           <p class="card-text">We deal with Ink and Papers.
+                           </p>
+                           <a href="#" class="btn btn-indigo">View Models</a>
+                        </div>
+                     </div>
+                     <!--/.Card-->
+                  </div>
+                  <!--Grid column-->
+               </div>
+            </section>
+            <section id="section3" class="text-center bg-light">
+               <!-- Heading -->
+               <h2 class="mb-5 font-weight-bold">EASY STEPS TO GET PRINTS</h2>
+               <!--Grid row-->
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-5">
+                     <i class="fas fa-edit fa-4x orange-text"></i>
+                     <h4 class="my-5 font-weight-bold">
+                        Register or Login
+                     </h4>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-1">
+                     <i class="fas fa-upload fa-4x orange-text"></i>
+                     <h4 class="my-5 font-weight-bold">Upload Your design</h4>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-1">
+                     <i class="fas fa-cart-plus fa-4x orange-text"></i>
+                     <h4 class="my-5 font-weight-bold">Add Shipping Address</h4>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-1">
+                     <i class="fas fa-rupee-sign fa-4x orange-text"></i>
+                     <h4 class="my-5 font-weight-bold">Make Payments</h4>
+                  </div>
+                  <!--Grid column-->
+               </div>
+               <!--Grid row-->
+            </section>
+            <hr class="my-5">
+            <section id="Aboutus">
+               <!-- Heading -->
+               <h2 class="mb-5 font-weight-bold text-center">About us</h2>
+               <!--Grid row-->
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+                     <!--Carousel Wrapper-->
+                     <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                           <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                           <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                           <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.Indicators-->
+                        <!--Slides-->
+                        <div class="carousel-inner z-depth-1-half" role="listbox">
+                           <!--First slide-->
+                           <div class="carousel-item active">
+                              <img class="d-block w-100 slider" src="img/silde1.jpg"
+                                 alt="First slide">
+                           </div>
+                           <!--/First slide-->
+                           <!--Second slide-->
+                           <div class="carousel-item">
+                              <img class="d-block w-100 slider" src="img/slide2.jpg"
+                                 alt="Second slide">
+                           </div>
+                           <!--/Second slide-->
+                           <!--Third slide-->
+                           <div class="carousel-item">
+                              <img class="d-block w-100 slider" src="img/slide1.jpg"
+                                 alt="Third slide">
+                           </div>
+                           <!--/Third slide-->
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                     </div>
+                     <!--/.Carousel Wrapper-->
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                     <!--Excerpt-->
+                     <h4 class="mb-3"><strong>Quality matters here</strong></h4>
+                     <p>Who we are, we are the best in online Printing works we will do more efficient work. 
+                        we doing all kind of printing works. 
+                        The printing Work will be in good quality.
+                     </p>
+                     <hr>
+                     <p>We do more efficient design.
+                     <h1>Be Productive<small> / </small>Be Creative</h1>
+                     </p>
+                     <a class="btn btn-primary btn-md">Read more</a>
+                  </div>
+                  <!--Grid column-->
+               </div>
+               <!--Grid row-->
+            </section>
+            <hr class="my-5">
+            <section id=contactus class="mb-4">
+               <!--Section heading-->
+               <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+               <!--Section description-->
+               <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                  a matter of hours to help you.
+               </p>
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-9 mb-md-0 mb-5">
+                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+                           <!--Grid column-->
+                           <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                 <input type="text" id="name" name="name" class="form-control">
+                                 <label for="name" class="">Your name</label>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                 <input type="text" id="email" name="email" class="form-control">
+                                 <label for="email" class="">Your email</label>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                 <input type="text" id="subject" name="subject" class="form-control">
+                                 <label for="subject" class="">Subject</label>
+                              </div>
+                           </div>
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                           <!--Grid column-->
+                           <div class="col-md-12">
+                              <div class="md-form">
+                                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                 <label for="message">Your message</label>
+                              </div>
+                           </div>
+                        </div>
+                        <!--Grid row-->
+                     </form>
+                     <div class="text-center ">
+                        <a class="btn btn-primary text-center" onclick="document.getElementById('contact-form').submit();">Send</a>
+                     </div>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-3 text-center">
+                     <ul class="list-unstyled mb-0">
+                        <li>
+                           <i class="fas fa-map-marker-alt fa-2x"></i>
+                           <p>No 60/21 Kosa Kasaya Kara Street
+                              <br>
+                              G.P.H Road Vellore - 632001
+                           </p>
+                        </li>
+                        <li>
+                           <i class="fas fa-phone mt-4 fa-2x"></i>
+                           <p>0416 - 2227829</p>
+                        </li>
+                        <li>
+                           <i class="fas fa-envelope mt-4 fa-2x"></i>
+                           <p>raveendarmaruthi@gmail.com</p>
+                        </li>
+                     </ul>
+                  </div>
+                  <!--Grid column-->
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer class="page-footer font-small indigo pt-5 mt-4">
+         <!-- Footer Links -->
+         <div class="container text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+               <!-- Grid column -->
+               <div class="col-md-4 mt-md-0 mt-3">
+                  <!-- Content -->
+                  <a class="brand" href="index.html">
+                  <img class="footlogo" src="img/mplogo.png" alt=""> </a> 
+                  <p>We are best online printing shop, 
+                     <br> we doing to good quality of work with new ideas of design
+                  </p>
+               </div>
+               <!-- Grid column -->
+               <hr class="clearfix w-100 d-md-none pb-3">
+               <!-- Grid column -->
+               <div class="col-md-5 mb-md-0 mb-3">
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Contact</h5>
+                  <dl class="list-unstyled">
+                     <dt>Address:</dt>
+                     <dd>No 60/21 Kosa kasaya Kara Street</dd>
+                     <dd>G.P.H Road Vellore - 632001</dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt>email:</dt>
+                     <dd><a class="fotoanc" href="mailto:#">raveendarmaruthi@gmail.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                     <dt>phones:</dt>
+                     <dd>
+                        0416 - 2227829
+                     </dd>
+                     <dd>+91 - 9443456145</dd>
+                  </dl>
+               </div>
+               <!-- Grid column -->
+               <!-- Grid column -->
+               <div class="col-md-3 mb-md-0 mb-3">
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Contacts</h5>
+                  <ul class="list-unstyled">
+                     <li class="nav-item"><a class="nav-link " href="#">
+                        <i class="fas fa-home"></i>
+                        Home</a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link " href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        Product</a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link " href="#">
+                        <i class="fas fa-users"></i>
+                        About</a>
+                     </li>
+                     <li class="nav-item"><a class="nav-link " href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        Contact us</a>
+                     </li>
+                     <li class="nav-item"><a class=" nav-link " href="#">
+                        <i class="fas fa-user"></i>
+                        Signin</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            <div class="row fotorow">
+               <div class="col-md-3 fotoryt text-center">
+                  <a class="" href="#"> <span> <i class="fab fa-facebook"></i> </span> <span>Facebook</span></a>
+               </div>
+               <div class="col-md-3 fotoryt text-center">
+                  <a class="" href="#"> <span><i class="fab fa-instagram"></i> </span> <span>Instagram</span></a>
+               </div>
+               <div class="col-md-3 fotoryt text-center">
+                  <a class="" href="#"> <span> <i class="fab fa-twitter"></i> </span><span>Twitter</span></a>
+               </div>
+               <div class="col-md-3 text-center">
+                  <a class="" href="#"> <span><i class="fab fa-google"></i> </span> <span>Google</span></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- JQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+      <script type="text/javascript"></script>
+   </body>
+</html>

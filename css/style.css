@@ -1,0 +1,50 @@
+.logo {
+    margin: 0px 30px 0px 10px !important;
+    height: 70px !important;
+    }
+    .sec1{
+    margin-top: 140px !important;
+    }
+    .tag {
+        font-family: 'Chelsea Market', cursive;
+        font-style: italic;
+        margin-top: 30px;
+        background-color: #f0f0f0;
+        border-bottom-left-radius: 60px 60px;
+        border-top-right-radius: 60px 60px;
+      }
+      .visimg {
+        height: 200px !important;
+      }
+      .slider {
+        height: 300px !important;
+      }
+      .footlogo{
+        background-color: white;
+        height: 80px;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+      .fotorow{
+        border-top:0.3px solid white !important;
+        padding: 10px 10px 5px 10px !important;
+      }
+      .fotoryt{
+        border-right: 1px solid white !important;
+      }
+      .h3tag {
+        font-family: 'Chelsea Market', cursive;
+        margin-top: 28px;
+        margin-bottom: 25px;
+        color: #1f4068;
+      }
+
+      
+      #profile-grid { overflow: auto; white-space: normal; }
+      #profile-grid .profile { padding-bottom: 40px; }
+      #profile-grid .panel { padding: 0 }
+      #profile-grid .panel-body { padding: 15px }
+      #profile-grid .profile-name { font-weight: bold; }
+      #profile-grid .thumbnail {margin-bottom:6px;}
+      #profile-grid .panel-thumbnail { overflow: hidden; }
+      #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
